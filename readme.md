@@ -7,14 +7,6 @@
 - Environment variables
 - Read name and version from package.json
 
-
-## Install
-
-```
-$ npm install meow
-```
-
-
 ## Usage
 
 ```
