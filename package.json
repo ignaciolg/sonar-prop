@@ -1,7 +1,7 @@
 {
-  "name": "sonarqube-properties-generator",
+  "name": "sonar-prop",
   "version": "1.0.0",
-  "description": "Creates a basic sonar-project.properties file from environment variables, arguments and the package.json file of the project. ",
+  "description": "Creates a basic sonar-project.properties file from environment variables, arguments and the package.json file.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,10 @@
   "author": "Ignacio Lopez",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/ignaciolg/sonarqube-properties-generator/issues"
+    "url": "https://github.com/ignaciolg/sonar-prop/issues"
   },
-  "homepage": "https://github.com/ignaciolg/sonarqube-properties-generator#readme"
+  "homepage": "https://github.com/ignaciolg/sonar-prop#readme",
+  "dependencies": {
+    "meow": "^5.0.0"
+  }
 }
