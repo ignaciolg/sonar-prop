@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Creates a basic sonar-project.properties file from environment variables, arguments and the package.json file.",
   "main": "index.js",
+  "bin": {
+    "sonar-prop": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
