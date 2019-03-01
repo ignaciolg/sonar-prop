@@ -67,7 +67,7 @@ properties.parse ('.sonar-project.properties', { path: true }, (error, props = {
     const version = cli.flags.version || process.env.SONAR_VERSION || props['sonar.projecVersion'] || package.version;
 
     if(!id || !paths || !name || !token || !url || !version){
-        console.log(`You should use the arguments, environment variables or base file '.sonar-project,properties' to fullfill the required information`);
+        console.log(`You should use the arguments, environment variables or base file '.sonar-project,properties' to fulfill the required information`);
         process.exit(1);
     }
 
