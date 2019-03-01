@@ -10,9 +10,19 @@
 
 ## Usage
 
+### Using npx
+
 ```
-$ npx --help
-$ npx --id=MyID --paths="src/js/app,src/js/modules" --name=MyName --url=https://sonar.url --token=SECRETTOKEN --version=1.2.3
+$ npx sonar-prop --help
+$ npx sonar-prop --id=MyID --paths="src/js/app,src/js/modules" --name=MyName --url=https://sonar.url --token=SECRETTOKEN --version=1.2.3
+```
+
+### Installing globaly
+
+```
+npm i sonar-prop -g
+$ sonar-prop --help
+$ sonar-prop --id=MyID --paths="src/js/app,src/js/modules" --name=MyName --url=https://sonar.url --token=SECRETTOKEN --version=1.2.3
 ```
 
 ## Arguments
