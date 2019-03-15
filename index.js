@@ -59,7 +59,7 @@ const cli = meow(`
 
 properties.parse ('.sonar-project.properties', { path: true }, (error, props = {}) => {
     // variables for the sonarqube configuration
-    const id = cli.flags.id || process.env.SONAR_ID || props['sonar.projecKey'] || package.name;
+    const id = cli.flags.id || process.env.SONAR_ID || props['sonar.projectKey'] || package.name;
     const paths = cli.flags.paths || process.env.SONAR_PATHS || props['sonar.sources'] || 'src/js/app,src/js/modules';
     const name = cli.flags.name || process.env.SONAR_NAME || props['sonar.projectName'] || package.name;
     const token = cli.flags.token || process.env.SONAR_TOKEN || props['sonar.login'] || 'TOKEN_HERE';
@@ -71,7 +71,7 @@ properties.parse ('.sonar-project.properties', { path: true }, (error, props = {
         process.exit(1);
     }
 
-    props['sonar.projectKey'] = name;
+    props['sonar.projectKey'] = id;
     props['sonar.sources'] = paths;
     props['sonar.projectName'] = name;
     props['sonar.login'] = token;
